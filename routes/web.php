@@ -7,3 +7,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('user/signup', [UserController::class, 'index']);
+Route::post('user/signup', [UserController::class, 'store']);

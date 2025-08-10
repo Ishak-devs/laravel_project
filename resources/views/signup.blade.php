@@ -7,7 +7,7 @@
 <body>
 <h1>Inscription</h1>
 
-<form>
+<form action="/signup" method="POST">
     @csrf
 
     <label>Nom :</label>
@@ -24,10 +24,6 @@
 
     <label>Mot de passe :</label>
     <input type="password" name="password" required>
-    <br><br>
-
-    <label>Confirmer le mot de passe :</label>
-    <input type="password" name="password_confirmation" required>
     <br><br>
 
     <button type="submit">S'inscrire</button>
