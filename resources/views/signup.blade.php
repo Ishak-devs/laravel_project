@@ -2,30 +2,35 @@
 <html>
 <head>
     <title>Signup</title>
+    <link rel="stylesheet" href="{{ asset('css/signup.css') }}">
 </head>
 <body>
-    <h1>Signup</h1>
+<h1>Inscription</h1>
 
-    <form action="/signup" method="POST">
+<form>
     @csrf
 
-        <label>Nom :</label>
-        <input type="text" name="name" required>
-        <br><br>
+    <label>Nom :</label>
+    <input type="text" name="nom" required>
+    <br><br>
 
-        <label>Prénom :</label>
-        <input type="number" name="price" required>
-        <br><br>
+    <label>Prénom :</label>
+    <input type="text" name="prenom" required>
+    <br><br>
 
-        <label>Email :</label>
-        <textarea name="description"></textarea>
-        <br><br>
+    <label>Email :</label>
+    <input type="email" name="email" required>
+    <br><br>
 
-        <label>Mot de passe :</label>
-        <textarea name="description"></textarea>
-        <br><br>
+    <label>Mot de passe :</label>
+    <input type="password" name="password" required>
+    <br><br>
 
-        <button type="submit">Ajouter</button>
-    </form>
+    <label>Confirmer le mot de passe :</label>
+    <input type="password" name="password_confirmation" required>
+    <br><br>
+
+    <button type="submit">S'inscrire</button>
+</form>
 </body>
 </html>
