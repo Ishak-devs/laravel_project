@@ -7,7 +7,7 @@
 <body>
 <h1>Inscription</h1>
 
-<form action="/signup" method="POST">
+<form action="/user/signup" method="POST">
     @csrf
 
     <label>Nom :</label>
